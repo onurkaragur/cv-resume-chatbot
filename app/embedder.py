@@ -4,7 +4,7 @@ import faiss
 import numpy as np
 
 class CVVectorStore:
-    def __init__(self, model_name="sentence-transformers/all-MiniLM-L6-v2")
+    def __init__(self, model_name="sentence-transformers/all-MiniLM-L6-v2"):
         self.embedder = SentenceTransformer(model_name)
         self.index = None
         self.chunks = []
